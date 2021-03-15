@@ -1,7 +1,6 @@
 Ionita Alexandru
-Grupa 332CB
 
-Tema e structurata in felul urmator:
+Structura algoritmului e facuta in felul urmator:
     -> este folosit un parser in functia generate_NFA prin care este creat un
        obiect NFA de forma (number_of_states, final_states,
                             list_of_transitions, alphabet), unde
