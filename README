@@ -1,0 +1,19 @@
+Ionita Alexandru
+Grupa 332CB
+
+Tema e structurata in felul urmator:
+    -> este folosit un parser in functia generate_NFA prin care este creat un
+       obiect NFA de forma (number_of_states, final_states,
+                            list_of_transitions, alphabet), unde
+       list_of_transitions este un dictionar (state, symbol) -> (next_state)
+       unde next_state este o lista, iar alphabet este multimea de simboluri
+       pe care le primeste FA-ul la input
+    -> se aplica un algoritm de conversie de la NFA la DFA prin care mai intai
+       se determina multimea de inchideri epsilon, acest lucru fiind facut in
+       functia get_list_of_epsilon_closure()
+    -> se pleaca cu inchiderea epsilon a starii initiale si pentru fiecare
+       stare din acea inchidere epsilon se ia fiecare litera din alfabet si
+       se determina urmatoarele stari (am creat get_list_of_transitions()
+       pentru a determina lista de simboluri pe care se poate pleca de din
+       starea curenta si calculate_dfa_next_state() unde se calculeaza,
+       folosind o coada, urmatoarea stare pentru DFA)
